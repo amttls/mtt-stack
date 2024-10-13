@@ -1,0 +1,12 @@
+{
+  "name": "mtt-stack",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "clean": "rm -f bun.lockb"
+  }
+}
+
