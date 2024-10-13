@@ -6,7 +6,9 @@
     "packages/*"
   ],
   "scripts": {
+    "dev": "concurrently \"bun run api\" \"bun run client\"",
+    "api": "bun run --cwd apps/api index.ts",
+    "client": "bun run --cwd apps/client index.ts",
     "clean": "rm -f bun.lockb"
   }
 }
-
