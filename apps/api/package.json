@@ -3,6 +3,7 @@
   "module": "index.ts",
   "type": "module",
   "dependencies": {
+    "hono": "^4.6.4",
     "mtt-stack/common": "workspace:^"
   },
   "devDependencies": {
@@ -10,6 +11,8 @@
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "dev": "bun run --watch index.ts"
   }
 }
-
