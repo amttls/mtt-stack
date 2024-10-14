@@ -22,6 +22,27 @@
     // Some stricter flags (disabled by default)
     "noUnusedLocals": false,
     "noUnusedParameters": false,
-    "noPropertyAccessFromIndexSignature": false
-  }
+    "noPropertyAccessFromIndexSignature": false,
+
+    "composite": true,
+    "baseUrl": ".",
+    "paths": {
+      "@mtt-stack/ui": ["packages/ui/lib/main.ts"],
+      "@mtt-stack/ui/*": ["packages/ui/lib/*"]
+    }
+  },
+  "references": [
+    {
+      "path": "/apps/api"
+    },
+    {
+      "path": "/apps/client"
+    },
+    {
+      "path": "packages/ui"
+    },
+    {
+      "path": "packages/common"
+    }
+  ],
 }

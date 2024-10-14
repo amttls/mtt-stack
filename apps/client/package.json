@@ -1,5 +1,5 @@
 {
-  "name": "client",
+  "name": "@mtt-stack/client",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@mtt-stack/common": "workspace:^",
+    "@mtt-stack/ui": "workspace:^",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },

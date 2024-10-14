@@ -1,3 +1,4 @@
+import { Button } from "@mtt-stack/ui";
 import { useState } from "react";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       >
         Click me
       </button>
+      <Button />
     </div>
   );
 }

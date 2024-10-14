@@ -1,11 +1,38 @@
 {
-  "name": "mtt-stack/ui",
-  "module": "index.ts",
+  "name": "@mtt-stack/ui",
+  "private": true,
+  "version": "0.0.0",
   "type": "module",
-  "devDependencies": {
-    "@types/bun": "latest"
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/@mtt-stack/ui.umd.cjs",
+  "module": "./dist/@mtt-stack/ui.js",
+  "exports": {
+    ".": {
+      "import": "./dist/@mtt-stack/ui.js",
+      "require": "./dist/@mtt-stack/ui.umd.cjs"
+    },
+    "./dist/style.css": "./dist/style.css"
   },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
+  "sideEffects": false,
+  "scripts": {
+    "dev": "bunx --bun vite",
+    "build": "bunx --bun vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@mtt-stack/common": "workspace:^",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.10",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.8",
+    "vite-plugin-dts": "^4.2.4"
   }
 }

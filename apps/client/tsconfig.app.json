@@ -1,8 +1,19 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
+    "composite": true,
     "useDefineForClassFields": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
+    "paths": {
+      "@mtt-stack/ui": ["../../packages/ui/lib/main.ts"],
+      "@mtt-stack/ui/*": ["../../packages/ui/lib/*"]
+    }
   },
-  "include": ["src"]
+  "references": [
+    {
+      "path": "../../packages/ui"
+    }
+  ],
+  "include": ["src", "../../packages/ui/lib/main.ts"]
 }

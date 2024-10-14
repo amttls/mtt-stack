@@ -1,5 +1,5 @@
 {
-  "name": "mtt-stack/common",
+  "name": "@mtt-stack/common",
   "module": "index.ts",
   "type": "module",
   "devDependencies": {
