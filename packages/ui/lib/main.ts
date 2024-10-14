@@ -1,3 +1,3 @@
 import "./index.css";
 
-export { Button } from "./button";
+export { Button } from "./button/index.tsx";
