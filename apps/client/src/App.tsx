@@ -4,11 +4,11 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="flex w-[100vw] h-[100vh] gap-4 items-center justify-center flex-col bg-neutral-900 text-neutral-50">
+    <div className="flex h-[100vh] w-[100vw] flex-col items-center justify-center gap-4 bg-neutral-900 text-neutral-50">
       <h1 className="text-base font-bold text-neutral-50">My App</h1>
       <span>Count: {count}</span>
       <button
-        className="bg-pink-700 w-[200px]"
+        className="w-[200px] bg-pink-700"
         onClick={() => setCount((prev) => prev + 1)}
       >
         Click me
