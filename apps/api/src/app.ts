@@ -9,6 +9,6 @@ app.use("*", logger());
 
 app.get("/test", (c) => c.json({ message: "Foo" }));
 
-app.route("/books", bookRouter);
+app.route("/api/books", bookRouter);
 
 export default app;
