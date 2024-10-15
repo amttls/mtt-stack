@@ -7,7 +7,9 @@
     "baseUrl": ".",
     "paths": {
       "@mtt-stack/ui": ["../../packages/ui/lib/main.ts"],
-      "@mtt-stack/ui/*": ["../../packages/ui/lib/*"]
+      "@mtt-stack/ui/*": ["../../packages/ui/lib/*"],
+      "@modules/*": ["src/modules/*"],
+      "@pages/*": ["src/pages/*"]
     }
   },
   "references": [
