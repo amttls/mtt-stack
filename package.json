@@ -9,6 +9,7 @@
     "dev": "concurrently \"bun run api\" \"bun run client\"",
     "api": "bun run --cwd apps/api dev",
     "client": "bun run --cwd apps/client dev",
+    "client:build": "bun run --cwd apps/client build",
     "clean": "rm -rf bun.lockb && rm -rf node_modules"
   },
   "devDependencies": {

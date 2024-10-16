@@ -6,7 +6,7 @@ import tsconfigPaths from "vite-tsconfig-paths";
 // https://vitejs.dev/config/
 export default defineConfig({
   css: {
-    postcss: "../../postcss.config.js",
+    postcss: path.resolve(__dirname, "../../postcss.config.js"),
   },
   server: {
     port: 5174,
